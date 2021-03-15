@@ -46,7 +46,7 @@ export default function TareasView() {
 
   useEffect(() => {
     iniciarConexionSockets();
-  }, [ENDPOINT]);
+  }, []);
 
   useEffect(() => {
     socket.on("tareas", (tareas) => {
