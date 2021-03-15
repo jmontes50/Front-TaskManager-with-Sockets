@@ -2,7 +2,7 @@
 
 ## Instalación
 
-Este repositorio requiere que tengas instalado Node.js v12+ para funcionar, de preferencia la version LTS
+Este repositorio requiere que tengas instalado Node.js v12+ https://nodejs.org/en/ para funcionar, de preferencia la version LTS
 Una vez que tengas python instalado, para comprobar corre el siguiente comando en una _terminal_ o _power shell_
 
 ```
