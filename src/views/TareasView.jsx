@@ -33,11 +33,6 @@ export default function TareasView() {
 
   const { id } = useParams();
 
-  const iniciarConexionSockets = () => {
-    socket = io(ENDPOINT);
-    socket.emit("tareas", id);
-  };
-
   useEffect(() => {
     if (!userState) {
       setRedireccionar("/login");
@@ -45,7 +40,8 @@ export default function TareasView() {
   }, [userState]);
 
   useEffect(() => {
-    iniciarConexionSockets();
+    socket = io(ENDPOINT);
+    socket.emit("tareas", id);
   }, []);
 
   useEffect(() => {
