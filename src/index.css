@@ -1,0 +1,191 @@
+html, body, #root {
+  height: calc(100% - 56px);
+}
+
+/* estilos fuentes */
+.Roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+.light{
+  font-weight: 300;
+}
+
+.medium{
+  font-weight: 500;
+}
+
+.semi-bold{
+  font-weight: 600;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+/* Inicio */
+.inicio > h1{
+  font-size:7rem;
+}
+
+.inicio span:nth-of-type(1){
+  animation: 9s infinite cambiacolor;
+}
+
+@keyframes cambiacolor{
+  0% {
+    color:black;
+  }
+
+  15%{
+    background-image: linear-gradient(45deg, #f3ec78, #F8BD1C);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+
+  27%{
+    color:black
+  }
+
+  100%{
+    color:black
+  }
+}
+
+.inicio span:nth-of-type(2){
+  animation: 9s infinite cambiacolor2;
+}
+
+@keyframes cambiacolor2{
+  0% {
+    color:black;
+  }
+
+  35% {
+    color:black;
+  }
+
+  47%{
+    background-image: linear-gradient(45deg, #f3ec78, #0AAAF4);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+
+  55%{
+    color:black
+  }
+
+  100%{
+    color:black
+  }
+}
+
+.inicio span:nth-of-type(3){
+  animation: 9s infinite cambiacolor3;
+}
+
+@keyframes cambiacolor3{
+  0% {
+    color:black;
+  }
+
+  55% {
+    color:black;
+  }
+
+  77%{
+    background-image: linear-gradient(45deg, #f3ec78, #FF3838);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+
+  85%{
+    color:black
+  }
+
+  100%{
+    color:black
+  }
+}
+
+/* Login */
+.login-main{
+  max-width:544px;
+}
+
+/* vista tareas */
+.tarea-titulo{
+  border-bottom: 1px solid #F4F4F4;
+}
+.tarea-item{
+  border-radius:10px;
+  background-color:#F4F4F4;
+}
+
+.tarea-item div:nth-of-type(1) {
+  width:45px;
+  height:8px;
+  border-radius:4px;
+  margin-bottom: 5px;
+}
+
+.tarea-item button {
+  font-size:0.7em;
+  transform: translateY(-12px);
+}
+.tarea-item > p {
+  font-size:0.8em;
+}
+
+.btn-agregar-tarea{
+  position: fixed;
+  bottom: 50px;
+  right:50px;
+  z-index: 99;
+}
+
+/* usuarios */
+
+.usuario-link h4{
+  text-decoration: inherit;
+}
+
+@media screen and (max-width:1200px){
+  .inicio > h1{
+    font-size:7.8vw
+  }
+  .btn-agregar-tarea{
+    position: static;
+  }
+}
+
+@media screen and (max-width:768px){
+  .inicio > h1{
+    font-size:3rem
+  }
+  .login-main {
+    padding:10px;
+  }
+
+  .login-main > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .login-main > button {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
